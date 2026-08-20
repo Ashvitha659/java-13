@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Activity Page</title>
+    </head>
+    <body>
+        <h1> Perimeter Calculator</h1>
+        <script>
+            var choice = prompt("Welcome to perimeter calculator. \n please enter your choice. \n1.perimeter of Rectangle. \n2.perimeter of triangle, \n3.perimeter of circle");
+
+            if (choice === "1") {
+                var length = prompt("Enter the length");
+                var width = prompt("Enter the width");
+                var perimeter = 2*length + 2*width;
+                alert("The perimeter of the rectangle is: " + perimeter);
+            } else if (choice === "2") {
+                var base = prompt("Enter the base of the triangle:");
+                var height = prompt("Enter the height of the triangle:");
+                var perimeter = base + height + Math.sqrt(base * base + height * height);
+                alert("The perimeter of the triangle is: " + perimeter);
+            } else if (choice === "3") {
+                var radius = prompt("Enter the radius of the circle:");
+                var perimeter = 2 * 3.14 * radius;
+                alert("The perimeter of the circle is: " + perimeter);
+            } else {
+                alert("Invalid choice!");
+            }
+        </script>
+    </body>
+</html>
